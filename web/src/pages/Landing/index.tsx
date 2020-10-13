@@ -1,7 +1,10 @@
 import React from 'react';
 import './styles.css';
 
-import logo from '../../images/Logo.svg'
+import logo from '../../images/Logo.svg';
+import {FiArrowRight} from 'react-icons/fi';
+
+
 
 const Landing: React.FC = () => {
     return(
@@ -22,9 +25,13 @@ const Landing: React.FC = () => {
                     <strong>Montevideo</strong>
                     <span>Uruguay</span>
                 </div>
+
+                <a href="" className="enter-app">
+                    <FiArrowRight  size={26} color="rgba(0, 0, 0, 0.6)"/>
+                </a>
               </div>
             </div>
-    )
-}
+    );
+};
 
 export default Landing;
