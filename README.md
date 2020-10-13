@@ -1,5 +1,7 @@
-# happy_uy
+
 <h1 align="center">
+  <img  align="center" alt="Logo" title="logo" width="200px"src="/web/src/images/Logo.svg">
+  <br>
   Happy es una plataforma para programar visitas a orfanatos, creada durante la Next Level Week
 </h1>
 <br>
