@@ -31,9 +31,9 @@ La principal propuesta de la biblioteca React es crear la Interface de Usuario y
   
   ## 📝 Licencia
 
-Este projecto esta sob licencia [MIT](./LICENSE).
+Este proyecto esta sob licencia [MIT](./LICENSE).
 
-Projecto desarollado durante la NLW 3 - Rocketseat.
+Proyecto desarollado durante la NLW 3 - Rocketseat.
 
 
    
