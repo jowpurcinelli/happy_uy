@@ -1,9 +1,16 @@
 # happy_uy
-Happy es una plataforma para programar visitas a orfanatos, creada durante la Next Level Week
+<h1 align="center">
+  Happy es una plataforma para programar visitas a orfanatos, creada durante la Next Level Week
+</h1>
+<br>
 
+## Screenshots
+### Landing
+<h3 align="center">
+    <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Landing.png">
+</h3>
 
-Herramientas utilizadas:
-  ## Tech
+  ## Techs
 - [NodeJs](https://nodejs.org/en/) - Crear el servidor
 - [ReactJs](https://reactjs.org) - A JavaScript library for building user interfaces
 La principal propuesta de la biblioteca React es crear la Interface de Usuario y proveer una mejor experiencia al utilizar la aplicación.
