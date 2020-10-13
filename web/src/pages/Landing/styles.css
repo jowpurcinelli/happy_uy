@@ -1,0 +1,23 @@
+#page-landing {
+    background: linear-gradient(329.54deg, #29B6D1 0%, #00C7C7 100%);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-landing .content-wrapper {
+    width: 100%;
+    max-width: 1100px;
+
+    height: 100%;
+    max-height: 680px;
+
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+
+}
