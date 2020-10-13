@@ -1,0 +1,67 @@
+#map-page {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+
+}
+/*width: 440p;*/
+#map-page aside {
+    width: 340px;
+    padding: 80px;
+    background: linear-gradient(329.54deg, #0098d4 0%, #009c9c 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+/* Justify content with spaeBetween, because I want the header to be on the top and the footer to be in the bottom */
+#map-page aside h2 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 42px;
+    margin-top: 64px;
+
+
+}
+#map-page aside p {
+    line-height: 20px;
+    margin-top: 24px;
+}
+
+#map-page aside footer {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+    
+}
+
+#map-page aside footer strong {
+    font-weight: 800;
+}
+
+#map-page .leaflet-container {
+    z-index: 5;
+}
+
+#map-page .create-orphanage {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    width: 64px;
+    height: 64px;
+
+    z-index: 10;
+
+    background: #ffd666;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+#map-page .create-orphanage:hover {
+    background: #ffbf0e;
+
+}
