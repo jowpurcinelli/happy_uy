@@ -1,6 +1,6 @@
 import {Request, Response} from 'express';
 
-import  Orphanage from './models/Orphnage';
+import  Orphanage from '../models/Orphnage';
 import { getRepository } from "typeorm";
 
 
