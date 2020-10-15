@@ -1,12 +1,21 @@
 import {Request, Response} from 'express';
-
-import  Orphanage from '../models/Orphnage';
 import { getRepository } from "typeorm";
 
+import  Orphanage from '../models/Orphnage';
 
+
+//CONTROLLERS :  index, show, create, update, delete
 
 export default {
-    async create(request: Request, response: Response, ){
+    async index (request: Request, response: Response){
+        const orphanagesRepository = getRepository(Orphanage);
+
+        const orphanages = await orphanagesRepository.find();  //can pass {conditions} 
+
+        return response.json(orphanages);
+    },
+    
+    async create(request: Request, response: Response ){
         const {
             name,
             latitude,
