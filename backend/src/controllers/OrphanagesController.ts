@@ -10,7 +10,16 @@ export default {
     async index (request: Request, response: Response){
         const orphanagesRepository = getRepository(Orphanage);
 
-        const orphanages = await orphanagesRepository.find();  //can pass {conditions} 
+        const orphanage = await orphanagesRepository.find();  //can pass {conditions} 
+
+        return response.json(orphanage);
+    },
+    async show (request: Request, response: Response){
+        
+        const { id} = request.params;
+        const orphanagesRepository = getRepository(Orphanage);
+
+        const orphanages = await orphanagesRepository.findOneOrFail(id);  //can pass {conditions} 
 
         return response.json(orphanages);
     },
