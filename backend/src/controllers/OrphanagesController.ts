@@ -11,11 +11,11 @@ export default {
     async index (request: Request, response: Response){
         const orphanagesRepository = getRepository(Orphanage);
 
-        const orphanage = await orphanagesRepository.find({
+        const orphanages = await orphanagesRepository.find({
             relations: [ 'images' ]
         });  //can pass {conditions} 
 
-        return response.json(orphanage);
+        return response.json(orphanages_view.renderMany(orphanages));
     },
     async show (request: Request, response: Response){
         
