@@ -10,7 +10,7 @@ const errorHandler: ErrorRequestHandler = (error, request, response, next ) => {
         let errors: ValidationErrors = { };
 
         error .inner.forEach(err => {
-            error[err.path] = err.errors;
+            errors[err.path] = err.errors;
             
         });
 

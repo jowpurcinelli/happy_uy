@@ -70,7 +70,7 @@ export default {
              opening_hours: Yup.string( ).required( ),
              images: Yup.array( 
                  Yup.object( ).shape( {
-                    path: Yup.string( ).required( ),
+                    path: Yup.string( ).required( )
              }) )
 
          } );
