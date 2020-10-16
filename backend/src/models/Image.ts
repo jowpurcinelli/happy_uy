@@ -9,7 +9,7 @@ export default class Image {
     id: number;
     
     @Column( )
-    name: string;
+    path: string;
 
     //outside db
 
