@@ -1,7 +1,7 @@
 import {Request, Response} from 'express';
 import { getRepository } from "typeorm";
 
-import  Orphanage from '../models/Orphnage';
+import  Orphanage from '../models/Orphanage';
 
 
 //CONTROLLERS :  index, show, create, update, delete

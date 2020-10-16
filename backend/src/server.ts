@@ -8,12 +8,7 @@ const app = express ( );
 
 app.use(express.json( ));
 
-
-app.post('/orphanages', async ( request, response) => {
-
-});
-
-
+app.use(routes);
 
 app.listen(3333);
 

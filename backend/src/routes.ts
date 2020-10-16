@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import OrphanagesController from './controllers/OrphanagesControllers';
+import OrphanagesController from './controllers/OrphanagesController';
 
 const routes = Router( );
 

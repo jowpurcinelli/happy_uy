@@ -1,6 +1,11 @@
 import { text } from "express";
 import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
+
+//to create, use:
+// yarn typeorm migration:create -n migration_name
+
+
 export class createOrphanages1602636230693 implements MigrationInterface {
     public async up(queryRunner: QueryRunner): Promise<void> {
         // realiza alteraciones que solicitamos en el banco de datos
