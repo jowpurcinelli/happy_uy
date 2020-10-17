@@ -37,7 +37,7 @@ export default function Orphanage( ) {
       api.get(`orphanages/${params.id}`).then(response => {
           setOrphanage(response.data);
       });
-  }, [params.id] );
+  }, [params.id]);
 
   if (!orphanage) {
     return <p> Cargando...</p> //temporary
@@ -53,17 +53,16 @@ export default function Orphanage( ) {
           <img src={orphanage.images[activeImageIndex].url} alt={orphanage.name} />
 
           <div className="images">
-            {orphanage.images.map( (image, index) => {
+            {orphanage.images.map((image, index) => {
               return( 
                 <button 
                   key={image.id} 
                   className={activeImageIndex === index ? 'active' : ' '}
                   type="button"
                   onClick={( ) => {
-                    setActiveImageIndex( index );
+                    setActiveImageIndex(index);
                   }}>
                     <img src={image.url} alt={orphanage.name} />
-
                 </button>
               )
             } )}
@@ -103,23 +102,23 @@ export default function Orphanage( ) {
             <div className="open-details">
               <div className="hour">
                 <FiClock size={32} color="#15B6D6" />
-                Lunes a Viernes <br />
-                {orphanage.opening_hours}
+                 Lunes a Viernes <br />
+                  {orphanage.opening_hours}
               </div>
-              { orphanage.open_on_weekends ? (
+                { orphanage.open_on_weekends ? (
                   <div className="open-on-weekends">
                       <FiInfo size={32} color="#39CC83" />
                         Atendemos <br />
                         el fin de semana
                   </div>
 
-              ) : (
+                    ) : (
                 <div className="open-on-weekends doesnt-open">
                       <FiInfo size={32} color="#FF669D" />
                         No atendemos <br />
                         el fin de semana
                   </div>
-              ) } 
+                  ) } 
             </div>
 
             <button type="button" className="contact-button">
