@@ -109,7 +109,7 @@ export default function CreateOrphanage() {
             </Map>
 
             <div className="input-block">
-              <label htmlFor="name">Nome</label>
+              <label htmlFor="name">Nombre</label>
               <input
                 id="name"
                 value={name}
@@ -117,10 +117,10 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="about">Sobre <span>Máximo de 300 caracteres</span></label>
+              <label htmlFor="about">Sobre <span>Máximo de 800 caracteres</span></label>
               <textarea
                 id="name"
-                maxLength={300}
+                maxLength={800}
                 value={about}
                 onChange={e => setAbout(e.target.value)}
               />
@@ -146,10 +146,10 @@ export default function CreateOrphanage() {
           </fieldset>
 
           <fieldset>
-            <legend>Visitação</legend>
+            <legend>Visitación</legend>
 
             <div className="input-block">
-              <label htmlFor="instructions">Instruções</label>
+              <label htmlFor="instructions">Instrucciones</label>
               <textarea
                 id="instructions"
                 value={instructions}
@@ -158,7 +158,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="opening_hours">Horário de funcionamento</label>
+              <label htmlFor="opening_hours">Horário de funcionamiento</label>
               <input
                 id="opening_hours"
                 value={opening_hours}
@@ -167,7 +167,7 @@ export default function CreateOrphanage() {
             </div>
 
             <div className="input-block">
-              <label htmlFor="open_on_weekends">Atende fim de semana</label>
+              <label htmlFor="open_on_weekends">Abierto fin de semana</label>
 
               <div className="button-select">
                 <button
@@ -175,7 +175,7 @@ export default function CreateOrphanage() {
                   className={open_on_weekends ? 'active' : ''}
                   onClick={() => setOpenOnWeekends(true)}
                 >
-                  Sim
+                  Si
                 </button>
 
                 <button
@@ -183,7 +183,7 @@ export default function CreateOrphanage() {
                   className={!open_on_weekends ? 'active' : '' }
                   onClick={() => setOpenOnWeekends(false)}
                 >
-                  Não
+                  No
                   </button>
               </div>
             </div>
