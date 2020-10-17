@@ -19,14 +19,15 @@ export default {
     },
     async show (request: Request, response: Response){
         
-        const { id} = request.params;
+        const { id } = request.params;
+
         const orphanagesRepository = getRepository(Orphanage);
 
-        const orphanages = await orphanagesRepository.findOneOrFail(id, {
+        const orphanage = await orphanagesRepository.findOneOrFail(id, {
             relations: ['images'],
         });  //can pass {conditions} 
 
-        return response.json(orphanages_view.render(orphanages));
+        return response.json(orphanages_view.render(orphanage));
     },
     
     async create(request: Request, response: Response ){
@@ -38,16 +39,15 @@ export default {
             instructions,
             opening_hours,
             open_on_weekends,
-    
          } = request.body;
         
          const orphanagesRepository = getRepository(Orphanage);
     
-         const requestImages = request.files as Express.Multer.File[ ];
+         const requestImages = request.files as Express.Multer.File[ ]; // Array de arquivos do multer
 
-         const images = requestImages.map( image => {
-             return { path: image.filename }
-         })
+         const images = requestImages.map( (image) => {
+             return { path: image.filename };
+         });
 
          const data = {
             name,
@@ -61,29 +61,29 @@ export default {
          };
 
          const schema = Yup.object( ).shape({
-             name: Yup.string( ).required('Nombre es  obligatório' ),
+             name: Yup.string( ).required( ),
              latitude: Yup.number( ).required( ),
              longitude: Yup.number( ).required( ),
-             about: Yup.string( ).required( 'Campo obligatório' ).max(800),
+             about: Yup.string( ).required( ).max(800),
              instructions: Yup.string( ).required( ),
              open_on_weekends: Yup.boolean( ).required( ),
              opening_hours: Yup.string( ).required( ),
              images: Yup.array( 
                  Yup.object( ).shape( {
                     path: Yup.string( ).required( )
-             }) )
+             }) ),
 
          } );
 
          await schema.validate( data, {
              abortEarly: false, //return all errors together
-         } )
+         } );
 
-         const orphanage = orphanagesRepository.create( data )
+         const orphanage = orphanagesRepository.create( data );
     
             await orphanagesRepository.save(orphanage);
             //assincrono
             return response.status(201).json(orphanage);
         //201 is the http code for created
-    }
+    },
 };

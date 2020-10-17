@@ -1,14 +1,16 @@
 import React from 'react';
+import {BrowserRouter} from 'react-router-dom';
 
 import './styles/global.css';
+import 'leaflet/dist/leaflet.css';
 import Routes from './routes';
 
 
 function App() {
   return (
-    <div id="page-landing">
-      <Routes/>
-    </div>
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
   );
 }
 

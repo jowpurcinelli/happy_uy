@@ -54,7 +54,7 @@ function OrphanagesMap( ) {
                         position={[orphanage.latitude, orphanage.longitude]}>
                             <Popup
                                 closeButton= {false} minWidth={240} maxWidth={240} className="popup-map">
-                                    <Link to={`/orfanatos/${orphanage.id}`}>
+                                    <Link to={`/orphanages/${orphanage.id}`}>
                                         <FiArrowRight size={20} color="#FFF" />
                                     </Link>
                                         {orphanage.name}
@@ -68,7 +68,7 @@ function OrphanagesMap( ) {
 
             </Map>
 
-            <Link to="/orfanatos/crear" className="create-orphanage">
+            <Link to="/orphanages/create" className="create-orphanage">
                 <FiPlus  size={32} color="#FFF" />
             </Link>
 

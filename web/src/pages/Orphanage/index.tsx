@@ -20,18 +20,18 @@ interface Orphanage {
   images: Array<{
     id: number;
     url: string;
-
   }>;
+
 }
 
-interface  OrphanageParams {
+interface OrphanageParams {
   id: string;
 }
 
 export default function Orphanage( ) {
   const params = useParams<OrphanageParams>( );
-  const [ orphanage, setOrphanage ] = useState<Orphanage>( );
-  const [ activeImageIndex, setActiveImageIndex ] = useState( 0 );
+  const [orphanage, setOrphanage] = useState<Orphanage>( );
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
 
    useEffect( ( ) =>  {
       api.get(`orphanages/${params.id}`).then(response => {
@@ -61,12 +61,11 @@ export default function Orphanage( ) {
                   type="button"
                   onClick={( ) => {
                     setActiveImageIndex( index );
-                  }}
-                >
+                  }}>
                     <img src={image.url} alt={orphanage.name} />
 
                 </button>
-              );
+              )
             } )}
           </div>
           
@@ -78,7 +77,7 @@ export default function Orphanage( ) {
               <Map 
                 center={[orphanage.latitude, orphanage.longitude]}
                 zoom={13.5} 
-                style={{ width: '100%', height: '100%' }}
+                style={{ width: '100%', height: 280 }}
                 dragging={false}
                 touchZoom={false}
                 zoomControl={false}
