@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Map, Marker, TileLayer } from 'react-leaflet';
 
 import { FiPlus } from "react-icons/fi";
@@ -6,14 +6,14 @@ import { FiPlus } from "react-icons/fi";
 
 
 import './styles.css';
-import SideBar from "../../components/SideBar";
+import Sidebar from "../../components/SideBar";
 import mapIcon from '../../utils/mapIcon';
 
 
 export default function CreateOrphanage() {
   return (
     <div id="page-create-orphanage">
-      <SideBar />
+      <Sidebar />
 
       <main>
         <form className="create-orphanage-form">
