@@ -37,7 +37,7 @@ export default function Orphanage( ) {
       api.get(`orphanages/${params.id}`).then(response => {
           setOrphanage(response.data);
       });
-  }, [params.id ] );
+  }, [params.id] );
 
   if (!orphanage) {
     return <p> Cargando...</p> //temporary

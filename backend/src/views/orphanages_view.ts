@@ -12,7 +12,7 @@ export default {
             instructions: orphanage.instructions,
             open_on_weekends: orphanage.open_on_weekends,
             opening_hours: orphanage.opening_hours,
-            image:  imagesView.renderMany( orphanage.images),
+            images:  imagesView.renderMany( orphanage.images),
         }
     },
     renderMany( orphanages: Orphanage[ ]) {

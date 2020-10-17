@@ -8,7 +8,7 @@ import * as Yup from 'yup';
 //CONTROLLERS :  index, show, create, update, delete
 
 export default {
-    async index (request: Request, response: Response){
+    async index (request: Request, response: Response) {
         const orphanagesRepository = getRepository(Orphanage);
 
         const orphanages = await orphanagesRepository.find({
@@ -17,8 +17,7 @@ export default {
 
         return response.json(orphanages_view.renderMany(orphanages));
     },
-    async show (request: Request, response: Response){
-        
+    async show (request: Request, response: Response) {
         const { id } = request.params;
 
         const orphanagesRepository = getRepository(Orphanage);
