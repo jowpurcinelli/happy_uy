@@ -6,7 +6,7 @@ import mapMarkerImg from '../../images/map-marker.svg';
 import './styles.css';
 
 export default function SideBar( ) {
-   const { goBack } = useHistory( );
+   const { goBack }  = useHistory( );
     return(
         <aside className="sidebar">
         <img src={mapMarkerImg} alt="Happy" />
