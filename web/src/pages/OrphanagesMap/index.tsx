@@ -2,20 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {FiPlus, FiArrowRight} from 'react-icons/fi';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import Leaflet from 'leaflet';
 
 import mapMarker from '../../images/map-marker.svg';
+import mapIcon from '../../utils/mapIcon';
 import'leaflet/dist/leaflet.css';
 import './styles.css';
-
-
-const mapIcon = Leaflet.icon( {
-    iconUrl: mapMarker,
-    iconAnchor: [ 29, 68],     //the proposal was to select the bottom of the icon as the selecton anchor. 
-    //29 is half of 58 so, middle, and 68 is the bottom.   X and Y respectvly
-    iconSize: [58, 68], 
-    popupAnchor:[ 170, 2 ]
-})
 
 function OrphanagesMap( ) {
     return (
@@ -47,7 +38,7 @@ function OrphanagesMap( ) {
                             <FiArrowRight size={20} color="#FFF" />
 
                         </Link>
-                        Chupa meu cu
+                        Aldeas infantiles
                     </Popup>
 
                 </Marker>
