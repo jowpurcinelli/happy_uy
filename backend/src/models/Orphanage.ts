@@ -24,11 +24,10 @@ export default class Orphanage {
     instructions: string;
 
     @Column( )
-    open_on_weekends: boolean;
-
-    @Column( )
     opening_hours: string;
 
+    @Column( )
+    open_on_weekends: boolean;
 
     //out of database, so it's not a Column
     @OneToMany( ( ) => Image, image => image.orphanage, {
