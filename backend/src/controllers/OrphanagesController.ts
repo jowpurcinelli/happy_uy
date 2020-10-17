@@ -2,7 +2,7 @@ import {Request, Response} from 'express';
 import { getRepository } from "typeorm";
 
 import  Orphanage from '../models/Orphanage';
-import orphanagesView from '../views/orphanages_view';
+import orphanageView from '../views/orphanages_view';
 import * as Yup from 'yup';
 
 //CONTROLLERS :  index, show, create, update, delete
@@ -15,7 +15,7 @@ export default {
             relations: [ 'images' ]
         });  //can pass {conditions} 
 
-        return response.json(orphanages_view.renderMany(orphanages));
+        return response.json(orphanageView.renderMany(orphanages));
     },
     async show (request: Request, response: Response) {
         const { id } = request.params;
@@ -26,7 +26,7 @@ export default {
             relations: ['images']
         });  //can pass {conditions} 
 
-        return response.json(orphanagesView.render(orphanage));
+        return response.json(orphanageView.render(orphanage));
     },
     
     async create(request: Request, response: Response ){
