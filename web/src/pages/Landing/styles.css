@@ -16,7 +16,7 @@
     width: 100%;
     max-width: 1100px;
 
-    height: 95%;
+    height: 99%;
     max-height: 680px;
 
     flex-direction: column;
@@ -24,7 +24,7 @@
     display: flex;
     align-items: flex-start;
 
-    background: url('../../images/ilustra-landing.svg') no-repeat 80% center
+    background: url('../../images/ilustra-landing.svg') no-repeat 100% center
 }
 
 .content-wrapper .location {

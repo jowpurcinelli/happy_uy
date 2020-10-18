@@ -22,7 +22,7 @@ export default function OrphanagesMap() {
   const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
 
   useFocusEffect(() => {
-    api.get('/orphanages').then(response => {
+    api.get('orphanages').then(response => {
       setOrphanages(response.data);
     });
   });
