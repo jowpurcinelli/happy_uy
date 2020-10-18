@@ -68,7 +68,6 @@ export default {
              about: Yup.string( ).required( ).max(800),
              instructions: Yup.string( ).required( ),
              opening_hours: Yup.string( ).required( ),
-             phone_number: Yup.string( ).required( ),
              open_on_weekends: Yup.boolean( ).required( ),
              images: Yup.array( 
                  Yup.object( ).shape( {

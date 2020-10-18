@@ -56,7 +56,7 @@ export default function OrphanageData() {
       data.append('images', {
         name: `image_${index}.jpg`,
         type: 'image/jpg',
-        uri: image
+        url: image
       } as any);
     })
 
@@ -90,7 +90,7 @@ export default function OrphanageData() {
 
   return (
     <ScrollView style={styles.container} contentContainerStyle={{ padding: 24 }}>
-      <Text style={styles.title}>Dados</Text>
+      <Text style={styles.title}>Datos</Text>
 
       <Text style={styles.label}>Nombre</Text>
       <TextInput

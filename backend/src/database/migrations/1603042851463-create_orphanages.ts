@@ -1,16 +1,11 @@
-import { text } from "express";
 import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
+export class createOrphanages1603042851463 implements MigrationInterface {
 
-//to create, use:
-// yarn typeorm migration:create -n migration_name
-
-
-export class createOrphanages1602636230693 implements MigrationInterface {
     public async up(queryRunner: QueryRunner): Promise<void> {
-        // realiza alteraciones que solicitamos en el banco de datos
-        await queryRunner.createTable( new Table( {
-            name: 'orphanages',
+        await queryRunner.createTable(
+            new Table({
+                name: 'orphanages',
             columns: [
                 {
                     name: 'id',
@@ -51,24 +46,22 @@ export class createOrphanages1602636230693 implements MigrationInterface {
                     default: false,
                 }, 
                 {
-                    name: 'opening_hours',
-                    type: 'varchar',
-                },
-                {
                     name: 'phone_number',
                     type: 'text',
-                },                                     
-            ],
-        }))
-    
-    
-    
-    
+                },
+            ]                          
+            })
+        );
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-    // desace lo que fue hecho por el up
-    await queryRunner.dropTable( 'orphanages');
+        await queryRunner.dropTable('orphanages');
     }
 
 }
+
+
+
+           
+   
+    

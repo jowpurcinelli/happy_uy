@@ -29,9 +29,6 @@ export default class Orphanage {
     @Column( )
     open_on_weekends: boolean;
 
-    @Column( )
-    phone_number: string;
-
     //out of database, so it's not a Column
     @OneToMany( ( ) => Image, image => image.orphanage, {
         cascade: [ 'insert', 'update']
