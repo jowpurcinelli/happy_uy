@@ -1,4 +1,4 @@
-node_modules/**/*
+node_modules
 .expo/*
 npm-debug.*
 *.jks
@@ -12,4 +12,4 @@ web-build/
 # macOS
 .DS_Store
 
-/node_modules
+/
