@@ -20,8 +20,13 @@ export default function OrphanagesMap() {
   const navigation = useNavigation();
 
   const [orphanages, setOrphanages] = useState<Orphanage[]>([]);
-
-
+/*
+  useFocusEffect(() => {
+    api.get('/orphanages').then(response => {
+      setOrphanages(response.data);
+    });
+  });
+  */
 
   function handleNavigateToOrphanageDetails(id: number) {
     navigation.navigate('OrphanageDetails', { id });
