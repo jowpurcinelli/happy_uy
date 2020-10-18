@@ -7,9 +7,14 @@
 <br>
 
 ## Screenshots
-### Landing
+### Web
 <h3 align="center">
-    <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Landing.png">
+    <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Landing1.png">
+    <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Orphanage.png">
+</h3>
+### Mobile
+<h3 align="center">
+    <img alt="Landing" title="landingpage" width="400px" src="/Github/images/mobile.png">
 </h3>
 
   ## Techs
