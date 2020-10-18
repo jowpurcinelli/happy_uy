@@ -15,7 +15,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 import * as ImagePicker from 'expo-image-picker';
 
 import { Feather } from '@expo/vector-icons';
-//import api from '../../services/api';
+import api from '../../services/api';
 
 interface OrphanageDataRouteParams {
   position: {
@@ -69,7 +69,7 @@ export default function OrphanageData() {
     const { status } = await ImagePicker.requestCameraRollPermissionsAsync();
     
     if(status !== 'granted') {
-      alert('Eita, precisamos de acesso às suas fotos...');
+      alert('Necesitamos acceso a tus fotos...');
       return;
     }
 
@@ -92,14 +92,14 @@ export default function OrphanageData() {
     <ScrollView style={styles.container} contentContainerStyle={{ padding: 24 }}>
       <Text style={styles.title}>Dados</Text>
 
-      <Text style={styles.label}>Nome</Text>
+      <Text style={styles.label}>Nombre</Text>
       <TextInput
         style={styles.input}
         value={name}
         onChangeText={setName}
       />
 
-      <Text style={styles.label}>Sobre</Text>
+      <Text style={styles.label}>Acerca de</Text>
       <TextInput
         style={[styles.input, { height: 110 }]}
         multiline
@@ -133,9 +133,9 @@ export default function OrphanageData() {
         <Feather name="plus" size={24} color="#15B6D6" />
       </TouchableOpacity>
 
-      <Text style={styles.title}>Visitação</Text>
+      <Text style={styles.title}>Visitación</Text>
 
-      <Text style={styles.label}>Instruções</Text>
+      <Text style={styles.label}>Instrucciones</Text>
       <TextInput
         style={[styles.input, { height: 110 }]}
         multiline
@@ -143,7 +143,7 @@ export default function OrphanageData() {
         onChangeText={setInstructions}
       />
 
-      <Text style={styles.label}>Horario de visitas</Text>
+      <Text style={styles.label}>Horario de visitación</Text>
       <TextInput
         style={styles.input}
         value={opening_hours}
@@ -151,7 +151,7 @@ export default function OrphanageData() {
       />
 
       <View style={styles.switchContainer}>
-        <Text style={styles.label}>Atende final de semana?</Text>
+        <Text style={styles.label}>Abierto el fin de semana?</Text>
         <Switch 
           thumbColor="#fff" 
           trackColor={{ false: '#ccc', true: '#39CC83' }}
@@ -161,7 +161,7 @@ export default function OrphanageData() {
       </View>
 
       <RectButton style={styles.nextButton} onPress={handleCreateOrphanage}>
-        <Text style={styles.nextButtonText}>Cadastrar</Text>
+        <Text style={styles.nextButtonText}>Registrar</Text>
       </RectButton>
     </ScrollView>
   )
