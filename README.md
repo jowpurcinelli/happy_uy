@@ -31,6 +31,88 @@
 - [CORS](https://www.npmjs.com/package/cors) - Cross-origin Resource Sharing
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and NodeJs
 
+## How to run
+Backend
+API Reference:
+<b>Run in Insomnia</b>
+
+Access backend folder and install the dependencies
+
+  $ yarn
+
+  # or
+
+  $ npm install
+  
+And then edit the file src/views/images_views with your current IP address:
+
+ ` // your ip is required to display photos on your mobile device`
+
+ 
+ `
+ render(image: Image) {
+		return {
+			id: image.id,
+			url: http://YOUR_CURRENT_IP_ADDRESS:3333/uploads/${image.path},
+		};
+	},
+  `
+After that run the database migrations
+
+ 
+ $ yarn typeorm migration:run
+
+  # or
+
+  $ npm typeorm migration:run
+
+Finally start the server
+
+ $ yarn dev
+
+  # or
+
+  $ npm run dev
+
+Frontend
+
+Access web folder and install the dependencies
+
+ $ yarn
+
+  # or
+
+  $ npm install
+  
+After that start the server
+
+  $ yarn start
+
+  # or
+
+  $ npm run start
+
+Mobile
+
+Access mobile folder and install the dependencies
+
+  $ yarn
+
+  # or
+  
+  $ npm install
+  
+After that edit the file src/services/api.ts with your current IP address:
+`
+  const api = axios.create({
+    baseURL: 'http://YOUR_CURRENT_IP_ADDRESS:3333',
+  });
+  `
+
+After all start the app
+
+  expo start
+
   
   ## 📝 Licencia
 
