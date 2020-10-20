@@ -9,12 +9,16 @@
 ## Screenshots
 ### Web
 <h3 align="center">
-    <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Landing1.png">
-    <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Orphanage.png">
+   <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Landing1.png"> 
+
+
+<img alt="Landing" title="landingpage" width="800px" src="/Github/images/Orphanage.png">
 </h3>
+<br>
+
 ### Mobile
 <h3 align="center">
-    <img alt="Landing" title="landingpage" width="400px" src="/Github/images/mobile.png">
+    <img alt="Landing" title="landingpage" width="280px" src="/Github/images/mobile.png">
 </h3>
 
   ## Techs
