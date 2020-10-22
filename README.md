@@ -2,8 +2,10 @@
 <h1 align="center">
   <img  align="center" alt="Logo" title="logo" width="700px"src="/Github/images/logoBlue.png"/>
   <br>
-  Happy es una plataforma para programar visitas a orfanatos, creada durante la Next Level Week
 </h1>
+<br>
+<h3 align="center">Happy es una plataforma para programar visitas a orfanatos, creada durante la Next Level Week </h3>
+<br>
 <br>
 
 ## Screenshots
