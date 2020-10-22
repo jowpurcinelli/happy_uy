@@ -1,27 +1,31 @@
 
-<h1 align="center">
-  <img  align="center" alt="Logo" title="logo" width="700px"src="/Github/images/logoBlue.png"/>
-  <br>
-</h1>
+<p align="center"><img  align="center" alt="Logo" title="logo" width="700px"src="/Github/images/logoBlue.png"/> </p>
 <br>
 <p align="center">Happy es una plataforma para programar visitas a orfanatos, creada durante la Next Level Week </p>
 <br>
 <br>
+<p align="center">
+      <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jowpurcinelli/happy_uy">
+      <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/jowpurcinelli/happy_uy">
+      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/jowpurcinelli/happy_uy">
+      <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jowpurcinelli/happy_uy">
+      <img alt="Github license" src="https://img.shields.io/github/license/jowpurcinelli/happy_uy">
+    </p>
 
 ## Screenshots
 ### Web
-<h3 align="center">
+<p align="center">
    <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Landing1.png"> 
 
 
 <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Orphanage.png">
-</h3>
+</p>
 <br>
 
 ### Mobile
-<h3 align="center">
+<p align="center">
     <img alt="Landing" title="landingpage" width="280px" src="/Github/images/mobile.png">
-</h3>
+</p>
 
   ## Techs
 - [NodeJs](https://nodejs.org/en/) - Crear el servidor
