@@ -11,6 +11,8 @@
       <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jowpurcinelli/happy_uy">
       <img alt="Github license" src="https://img.shields.io/github/license/jowpurcinelli/happy_uy">
     </p>
+<h2>:bookmark: Layout</h2>
+    <p>Puedes ver el design del layout <a href="https://www.figma.com/file/gDrXld4UIliHT2EzLRlHOt/Happy-Web" rel="nofollow">web</a> y <a href="https://www.figma.com/file/YyJdg3EebwMgelgNJyPSL3/Happy-Mobile" rel="nofollow">mobile</a> version. Necesitás una cuenta <a href="https://www.figma.com/" rel="nofollow">Figma</a> para acceder.</p>
 
 ## Screenshots
 ### Web
