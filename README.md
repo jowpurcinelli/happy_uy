@@ -4,7 +4,7 @@
   <br>
 </h1>
 <br>
-<h3 align="center">Happy es una plataforma para programar visitas a orfanatos, creada durante la Next Level Week </h3>
+<p align="center">Happy es una plataforma para programar visitas a orfanatos, creada durante la Next Level Week </p>
 <br>
 <br>
 
