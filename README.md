@@ -17,10 +17,10 @@
 ## Screenshots
 ### Web
 <p align="center">
-   <img alt="Landing" title="landingpage" width="800px" src="/Github/images/Landing1.png"> 
+   <img alt="Landing" title="landingpage" width="720px" src="/Github/images/Landing1.png"> 
 
 
-<img alt="Landing" title="landingpage" width="800px" src="/Github/images/Orphanage.png">
+<img alt="Landing" title="landingpage" width="720px" src="/Github/images/Orphanage.png">
 </p>
 <br>
 
@@ -44,86 +44,58 @@
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and NodeJs
 
 ## How to run
+<pre><span class="pl-c"><span class="pl-c">#</span> Clone this repository</span>
+$ git clone https://github.com/gisabernardess/happy</pre>
+
 Backend
 API Reference:
 <b>Run in Insomnia</b>
 
 Access backend folder and install the dependencies
 
-  $ yarn
-
-  # or
-
-  $ npm install
-  
-And then edit the file src/views/images_views with your current IP address:
-
- ` // your ip is required to display photos on your mobile device`
+<h2>:information_source:</a> How To Use </h2>
+    <p>To clone and run this application, you'll need <a href="https://git-scm.com" rel="nofollow">Git</a> and  <a href="https://legacy.yarnpkg.com" rel="nofollow">Yarn</a>. From your command line:</p>
+    <div class="highlight highlight-source-shell">
+      <pre><span class="pl-c"><span class="pl-c">#</span> Clone this repository</span>
+$ git clone https://github.com/gisabernardess/happy</pre>
+    </div>
+    <h4>:gear: Backend</h4>
+    <div class="highlight highlight-source-shell">
+      <pre><span class="pl-c"><span class="pl-c">#</span> Go into the repository</span>
+$ <span class="pl-c1">cd</span> happy/server <br/>
+<span class="pl-c"><span class="pl-c">#</span> Install dependencies</span>
+$ yarn <br/>
+<span class="pl-c"><span class="pl-c">#</span> Run the development server</span>
+$ yarn start <br/>
+<span class="pl-c"><span class="pl-c">#</span> Run the migrations</span>
+$ yarn migration:run <br/>
+<span class="pl-c"><span class="pl-c">#</span> The app will automatically reload if you change any of the source files.</span></pre>
+</div>
+    <h4>:desktop_computer: Frontend</h4>
+    <div class="highlight highlight-source-shell">
+      <pre><span class="pl-c"><span class="pl-c">#</span> Go into the repository</span>
+$ <span class="pl-c1">cd</span> happy/web <br/>
+<span class="pl-c"><span class="pl-c">#</span> Install dependencies</span>
+$ yarn <br/>
+<span class="pl-c"><span class="pl-c">#</span> Run the development server</span>
+$ yarn start <br/>
+<span class="pl-c"><span class="pl-c">#</span> Navigate to http://localhost:3000</span>
+<span class="pl-c"><span class="pl-c">#</span> The app will automatically reload if you change any of the source files.</span></pre>
+</div>
+  <h4>:iphone: Mobile</h4>
+    <div class="highlight highlight-source-shell">
+      <pre><span class="pl-c"><span class="pl-c">#</span> Be into the repository</span>
+$ <span class="pl-c1">cd</span> happy/mobile <br/>
+<span class="pl-c"><span class="pl-c">#</span> Install dependencies</span>
+$ yarn <br/>
+<span class="pl-c"><span class="pl-c">#</span> Run the development server</span>
+$ yarn start <br/>
+<span class="pl-c"><span class="pl-c">#</span> The app will automatically starts Metro Bundler. You may use an emulator or your own smartphone.</span>
+<span class="pl-c"><span class="pl-c">#</span> Automatically reloads if you change any of the source files.</span></pre>
+</div>
 
  
- `
- render(image: Image) {
-		return {
-			id: image.id,
-			url: http://YOUR_CURRENT_IP_ADDRESS:3333/uploads/${image.path},
-		};
-	},
-  `
-After that run the database migrations
 
- 
- $ yarn typeorm migration:run
-
-  # or
-
-  $ npm typeorm migration:run
-
-Finally start the server
-
- $ yarn dev
-
-  # or
-
-  $ npm run dev
-
-Frontend
-
-Access web folder and install the dependencies
-
- $ yarn
-
-  # or
-
-  $ npm install
-  
-After that start the server
-
-  $ yarn start
-
-  # or
-
-  $ npm run start
-
-Mobile
-
-Access mobile folder and install the dependencies
-
-  $ yarn
-
-  # or
-  
-  $ npm install
-  
-After that edit the file src/services/api.ts with your current IP address:
-`
-  const api = axios.create({
-    baseURL: 'http://YOUR_CURRENT_IP_ADDRESS:3333',
-  });
-  `
-
-After all start the app
-
-  expo start
 
   
   ## 📝 Licencia
