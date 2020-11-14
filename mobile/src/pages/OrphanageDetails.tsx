@@ -73,7 +73,7 @@ export default function OrphanageDetails() {
               <Image 
                 key={image.id}
                 style={styles.image} 
-                source={{ uri: image.url }} 
+                source={{ url: image.url }} 
               />
             );
           })}
