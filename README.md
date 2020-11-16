@@ -45,7 +45,7 @@
 
 ## How to run
 <pre><span class="pl-c"><span class="pl-c">#</span> Clone this repository</span>
-$ git clone https://github.com/gisabernardess/happy</pre>
+$ git clone https://github.com/jowpurcinelli/happy_uy</pre>
 
 Backend
 API Reference:
@@ -57,7 +57,7 @@ Access backend folder and install the dependencies
     <p>To clone and run this application, you'll need <a href="https://git-scm.com" rel="nofollow">Git</a> and  <a href="https://legacy.yarnpkg.com" rel="nofollow">Yarn</a>. From your command line:</p>
     <div class="highlight highlight-source-shell">
       <pre><span class="pl-c"><span class="pl-c">#</span> Clone this repository</span>
-$ git clone https://github.com/gisabernardess/happy</pre>
+$ git clone https://github.com/jowpurcinelli/happy_uy</pre>
     </div>
     <h4>:gear: Backend</h4>
     <div class="highlight highlight-source-shell">
