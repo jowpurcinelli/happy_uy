@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, View, Text, Dimensions } from 'react-native';
 import MapView, { Marker, Callout, PROVIDER_GOOGLE } from 'react-native-maps';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
-import { ReactButton } from 'react-native-gesture-handler';
+import { RectButton } from 'react-native-gesture-handler';
 
 import api from '../services/api';
 
@@ -75,9 +75,9 @@ export default function OrphanagesMap() {
       <View style={styles.footer}>
         <Text style={styles.footerText}>{orphanages.length} orfanatos encontrados</Text>
 
-        <ReactButton style={styles.createOrphanageButton} onPress={handleNavigateToCreateOrphanage}>
+        <RectButton style={styles.createOrphanageButton} onPress={handleNavigateToCreateOrphanage}>
           <Feather name="plus" size={20} color="#FFF" />
-        </ReactButton>
+        </RectButton>
       </View>
     </View>
   );
