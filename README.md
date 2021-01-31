@@ -14,8 +14,8 @@
 <h2>:bookmark: Layout</h2>
     <p>Puedes ver el design del layout <a href="https://www.figma.com/file/gDrXld4UIliHT2EzLRlHOt/Happy-Web" rel="nofollow">web</a> y <a href="https://www.figma.com/file/YyJdg3EebwMgelgNJyPSL3/Happy-Mobile" rel="nofollow">mobile</a> version. Necesitás una cuenta <a href="https://www.figma.com/" rel="nofollow">Figma</a> para acceder.</p>
 
-## Screenshots
-### Web
+## Screenshots.
+### Web.
 <p align="center">
    <img alt="Landing" title="landingpage" width="720px" src="/Github/images/Landing1.png"> 
 
@@ -52,6 +52,7 @@ API Reference:
 <b>Run in Insomnia</b>
 
 Access backend folder and install the dependencies
+
 
 <h2>:information_source:</a> How To Use </h2>
     <p>To clone and run this application, you'll need <a href="https://git-scm.com" rel="nofollow">Git</a> and  <a href="https://legacy.yarnpkg.com" rel="nofollow">Yarn</a>. From your command line:</p>
